@@ -2,21 +2,96 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="Inscripción para el evento">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inscripción | dev</title>
 </head>
 <body>
-    <h1>Inscripción · Parche Dev 2026</h1>
-    <nav>
-        <ul>
-            <li><a href="agenda.html">Agenda</a></li>
-            <li><a aria-current="page">Conducta</a></li>
-            <li><a href="inscripcion.html">Inscripciones</a></li>
-            <li><a href="ponentes.html">Ponentes</a></li>
-            <li><a href="../index.html">Inicio</a></li>
-        </ul>
-    </nav>
+    <a href="#contenido">Saltar al contenido</a>
+    <header>
+        <h1><a href="../index.html">Inscripción · Parche Dev 2026</a></h1>
+        <nav>
+            <ul>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a aria-current="page">Conducta</a></li>
+                <li><a href="inscripcion.html">Inscripciones</a></li>
+                <li><a href="ponentes.html">Ponentes</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido">
+        <h2>Formulario de inscripción</h2>
+        <p>La entrada es gratuita y los cupos son limitados. Completa el formulario para reservar el tuyo.
+        Los campos marcados con * son obligatorios.</p>
+        <form action="gracias.html" method="post" class="formulario">
+            <fieldset>
+                <legend>tus datos</legend>
+                    <p><label for="Nombre">Nombre completo:</label></p>
+                    <input type="text" id="Nombre" name="Nombre" required>
+                    <p><label id="correo">Correo electronico:</label></p>
+                    <input type = "email" id="correo1" name = "correo" required>
+                    <p><label id="telefono">Celular: </label></p>
+                    <input type="tel" id="telefono1" name="telefono" pattern="[3]{10}">
+                    <p><label id="ciudad">Ciudad:</label></p>
+                    <select id="ciudad1" name="ciudad" >
+                        <option value="medellin">Medellín</option>
+                        <option value="bello">Bello</option>
+                        <option value="itagui">itagui</option>
+                        <option value="envigado">Envigado</option>
+                        <option value="sabaneta">Sabaneta</option>
+                        <option value="la-estrella">La Estrella</option>
+                        <option value="caldas">Caldas</option>
+                        <option value="copacabana">Copacabana</option>
+                        <option value="girardota">Girardota</option>
+                        <option value="barbosa">Barbosa</option>
+                        <option value="otra">Otra</option>
+                    </select>
+            </fieldset>
+
+            <fieldset> 
+                <legend>¿En que momento estas?</legend>
+                    <p><label for = "momento">marca una sola opción</label></p>
+                    <p><input type="radio" name="momento" id="momento" value="Estoy empezando a programar" required> Estoy empezando a programar</p>
+                    <p><input type="radio" name="momento" id="momento1" value="Ya programo, pero no trabajo en tecnología" required> Ya programo, pero no trabajo en tecnología</p>
+                    <p><input type = "radio" name = "momento" id = "momento2" value = "Trabajo en tecnologia" required> Trabajo en tecnología</p>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Qué temas te interesan?</legend>
+                    <p><label for = "enteraste">puedes marcar varias opciones</label></p>
+                    <p><input type="checkbox" name="enteraste" id="enteraste" value="Desarrollo web"> Desarrollo web</p>
+                    <p><input type="checkbox" name="enteraste" id="enteraste1" value="Datos y SQL"> Datos y SQL</p>
+                    <p><input type="checkbox" name="enteraste" id="enteraste2" value="Accesibilidad"> Accesibilidad</p>
+                    <p><input type="checkbox" name="enteraste" id="enteraste3" value="Python"> Python</p>
+                    <p><input type="checkbox" name="enteraste" id="enteraste4" value="Despliegue en la nube">Despliegue en la nube</p>
+                    
+            </fieldset>
+
+            <fieldset>
+                <legend>Agenda</legend>
+                    <p><label for = "inscripcion">¿Deseas inscribirte al taller de "tu primer bot con python"?</label></p>
+                    <p><input type="checkbox" name="inscripcion" id="inscripcion" value="si"> Sí, deseo inscribirme al taller</p>
+                    <p> <label for = "talla">Regalanos tu talla de camiseta</label></p>
+                    <select id="talla" name="talla">
+                        <option value="none">none</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+            </fieldset>
+            <fieldset>
+                <legend>Comentarios</legend>
+                    <p><label for = "comentarios">¿Tienes algún comentario o sugerencia?</label></p>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" maxlength ="300"></textarea>
+            </fieldset>
+            <p> <label for = "aceptarter"> Aceptas el codigo de conducta del evento: <a href="codigo_de_conducta.html" target="_blank">aquí</a> para consultar codigo</label></p>
+            <p><input type = "radio" name = "aceptarter" id = "aceptarter" value = "si" required> Sí, acepto el código de conducta</p>
+            <p><button type="submit"><a href="gracias.html">Enviar formulario</a></button></p>
+        </form>
+        </main>
+
+
     <footer>
         <p>¿Preguntas? Escríbenos a hola@parchedev.example</p>
         <p>Parche Dev 2026 · Medellín, Colombia</p>
