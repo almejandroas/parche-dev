@@ -7,8 +7,10 @@
 </head>
 <body>
     <a href="#contenido">Saltar al contenido</a>
+     <p><a href = "#contenido">saltar a contenido</a></p>
     <header>
-        <h1><a href="../index.html">Inscripción · Parche Dev 2026</a></h1>
+        <p><a href="../index.html">Parche Dev 2026</a></p>
+        <h1>Inscripción · Parche Dev 2026</h1>
         <nav>
             <ul>
                 <li><a href="agenda.html">Agenda</a></li>
@@ -23,17 +25,17 @@
         <h2>Formulario de inscripción</h2>
         <p>La entrada es gratuita y los cupos son limitados. Completa el formulario para reservar el tuyo.
         Los campos marcados con * son obligatorios.</p>
-        <form action="gracias.html" method="post" class="formulario">
+        <form action = "gracias.html" method = "get">
             <fieldset>
                 <legend>tus datos</legend>
                     <p><label for="Nombre">Nombre completo:</label></p>
                     <input type="text" id="Nombre" name="Nombre" required>
-                    <p><label id="correo">Correo electronico:</label></p>
-                    <input type = "email" id="correo1" name = "correo" required>
-                    <p><label id="telefono">Celular: </label></p>
-                    <input type="tel" id="telefono1" name="telefono" pattern="[3]{10}">
-                    <p><label id="ciudad">Ciudad:</label></p>
-                    <select id="ciudad1" name="ciudad" >
+                    <p><label for="correo">Correo electronico:</label></p>
+                    <input type = "email" id="correo" name = "correo" required>
+                    <p><label for="telefono">Celular: </label></p>
+                    <input type="tel" id="telefono" name="telefono" pattern="[3]{0-9}">
+                    <p><label for="ciudad">Ciudad:</label></p>
+                    <select id="ciudad" name="ciudad" >
                         <option value="medellin">Medellín</option>
                         <option value="bello">Bello</option>
                         <option value="itagui">itagui</option>
@@ -87,7 +89,7 @@
             </fieldset>
             <p> <label for = "aceptarter"> Aceptas el codigo de conducta del evento: <a href="codigo_de_conducta.html" target="_blank">aquí</a> para consultar codigo</label></p>
             <p><input type = "radio" name = "aceptarter" id = "aceptarter" value = "si" required> Sí, acepto el código de conducta</p>
-            <p><button type="submit"><a href="gracias.html">Enviar formulario</a></button></p>
+            <p><button type="submit">Enviar formulario</button></p>
         </form>
         </main>
 
